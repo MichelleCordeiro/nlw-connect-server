@@ -1,9 +1,9 @@
+import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import z from 'zod'
-import { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 
 // body - search params(filtro paginaçã0), route params (identiifcar recursos c id)
 
-export const subscribeToEventRoute: FastifyPluginAsyncZod = async (app) => {
+export const subscribeToEventRoute: FastifyPluginAsyncZod = async app => {
   app.post(
     '/subscriptions',
     {
@@ -24,7 +24,7 @@ export const subscribeToEventRoute: FastifyPluginAsyncZod = async (app) => {
       }
     },
     async (request, reply) => {
-      const { name, email } = request.body;
+      const { name, email } = request.body
 
       // criação da inscrição no bd
       return reply.status(201).send({
