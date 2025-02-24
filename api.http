@@ -5,3 +5,7 @@ Content-Type: application/json
   "name": "Michelle Cordeiro",
   "email": "zxzx@gmail.com"
 }
+
+###
+
+GET http://localhost:3333/invites/mic_cord
