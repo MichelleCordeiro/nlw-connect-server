@@ -9,3 +9,6 @@ Content-Type: application/json
 ###
 
 GET http://localhost:3333/invites/mic_cord
+
+###
+GET http://localhost:3333/subscribers/mic_cord/ranking/clicks
