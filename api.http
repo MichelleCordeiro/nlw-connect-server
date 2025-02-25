@@ -2,13 +2,25 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-  "name": "Michelle Cordeiro",
-  "email": "zxzx@gmail.com"
+  "name": "Usuário Indicado 2",
+  "email": "indicado2@gmail.com",
+  "referrer": "37a5a8b7-cdbc-436b-9703-08dbc9f255ce"
 }
 
 ###
 
-GET http://localhost:3333/invites/mic_cord
+# GET http://localhost:3333/invites/37a5a8b7-cdbc-436b-9703-08dbc9f255ce
 
-###
-GET http://localhost:3333/subscribers/mic_cord/ranking/clicks
+GET http://localhost:3333/invites/c1a0ec68-9856-480b-850e-0053b67cb8b2
+
+
+### CLICKS NO LINK
+# GET http://localhost:3333/subscribers/37a5a8b7-cdbc-436b-9703-08dbc9f255ce/ranking/clicks
+
+GET http://localhost:3333/subscribers/c1a0ec68-9856-480b-850e-0053b67cb8b2/ranking/clicks
+
+
+### INDICAÇÕES
+GET http://localhost:3333/subscribers/37a5a8b7-cdbc-436b-9703-08dbc9f255ce/ranking/count
+
+# GET http://localhost:3333/subscribers/c1a0ec68-9856-480b-850e-0053b67cb8b2/ranking/count
