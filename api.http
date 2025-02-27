@@ -2,9 +2,9 @@ POST http://localhost:3333/subscriptions
 Content-Type: application/json
 
 {
-  "name": "Usuário Indicado 2",
-  "email": "indicado2@gmail.com",
-  "referrer": "37a5a8b7-cdbc-436b-9703-08dbc9f255ce"
+  "name": "Usuário Indicado 3",
+  "email": "indicado3@gmail.com",
+  "referrer": "c1a0ec68-9856-480b-850e-0053b67cb8b2"
 }
 
 ###
@@ -24,3 +24,10 @@ GET http://localhost:3333/subscribers/c1a0ec68-9856-480b-850e-0053b67cb8b2/ranki
 GET http://localhost:3333/subscribers/37a5a8b7-cdbc-436b-9703-08dbc9f255ce/ranking/count
 
 # GET http://localhost:3333/subscribers/c1a0ec68-9856-480b-850e-0053b67cb8b2/ranking/count
+
+### POSIÇÃO
+GET http://localhost:3333/subscribers/37a5a8b7-cdbc-436b-9703-08dbc9f255ce/ranking/position
+
+
+### GET RANKING
+GET http://localhost:3333/ranking
