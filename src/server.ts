@@ -48,5 +48,6 @@ app.register(getSubscriberRankingPositionRoute)
 app.register(getRankingRoute)
 
 app.listen({ port: env.PORT }).then(() => {
-  console.log('HTTP server running!')
+  console.log('🚀 HTTP server running!')
 })
+

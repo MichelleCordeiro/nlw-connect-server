@@ -1,7 +1,7 @@
 <!-- Banner session -->
 <p>
-  <img src="https://i.postimg.cc/xT5jvJXF/rocketseat-logo-gray-dark.png" alt="Logo RocketSeat" width="200" align="left" style="padding-top:13px">
-  <img src="https://i.postimg.cc/Y2ghWCNJ/nlw-connect.png" alt="Logo NLW Journey" title="Logo NLW Journey" width="160" align="right">
+  <img src="https://i.postimg.cc/xT5jvJXF/rocketseat-logo-gray-dark.png" alt="Logo RocketSeat" width="180" align="left" style="padding-top:13px">
+  <img src="https://i.postimg.cc/Y2ghWCNJ/nlw-connect.png" alt="Logo NLW Journey" title="Logo NLW Connect" width="160" align="right">
 </p>
 <br><br><br>
 
@@ -9,11 +9,11 @@
 <h1 align="center" style="color:#8257e6">DevStage</h1>
 
 <div align="center">
-  Back-end desenvolvido na trilha Node do NLW Connect da <a href="https://www.rocketseat.com.br/" target="_blank">RocketSeat</a>
+  Back-end desenvolvido na trilha Node do NLW Connect da <a href="https://www.rocketseat.com.br/" target="_blank">Rocketseat</a>
 
 <br>
 
-  <img src="https://i.postimg.cc/brvC4BRn/Group-1.png" alt="NLW Journey Plann.er" width="800">
+  <img src="https://i.postimg.cc/brvC4BRn/Group-1.png" alt="NLW Connect DevStage" width="800">
   <!-- <video controls src="https://github.com/MichelleCordeiro/nlw-expert-react-notes/assets/42891377/27842410-bae5-4d2e-96ca-3c512a9792fe" title="App Notes" width="900"></video> -->
 </div>
 
@@ -122,7 +122,6 @@
 
 ```
 git clone https://github.com/MichelleCordeiro/nlw-connect-server.git
-
 ```
 
 2. Instale as dependências
@@ -131,29 +130,42 @@ git clone https://github.com/MichelleCordeiro/nlw-connect-server.git
 npm install
 ```
 
-<!-- 3. Renomeie o arquivo `.env.example` para `.env` e preencha as informações
+3. Renomeie o arquivo `.env.example` para `.env` e confira se as informações estão de acordo com o arquivo docker-compose.yml
 
-```
+<br>
+
+<!-- ```
 DATABASE_URL=""
-```
+
+````-->
 
 4. Execute as migrações
 
 ```
-npm run migrate
-``` -->
+npm run db:migrate
+```
 
 <br>
 
-<h3> 🚀 Execução </h3>
+<h3> 🚀 Execução do back-end </h3>
 
-3. Build na aplicação
+&emsp; Você precisa ter o [Docker](https://docs.docker.com/get-started/get-docker/) instalado e rodando na sua máquina.
+
+<br>
+
+5. Use o Docker para executar o Postgres e o Radis
+
+```
+docker compose up -d
+```
+
+6. Build a aplicação
 
 ```
 npm run build
 ```
 
-4. Inicie a aplicação
+7. Inicie a aplicação
 
 ```
 npm run start
@@ -163,7 +175,7 @@ npm run start
 
 &emsp; Acesse http://localhost:5173 para visualizar o site (front-end) da aplicação.
 
-&emsp; Para a aplicação funcionar é preciso executar também a API (back-end). Você a encontrará [aqui](https://github.com/Vitinho163/NLW-Unite---Pass-In.git) .
+&emsp; Para a aplicação funcionar é preciso que esta API (back-end) e o front-end estejam executando.
 
 <br>
 
@@ -180,7 +192,7 @@ npm run start
 
 <br>
 
-## 📝 Documentação da API (Swagger)
+<h3> 📝 Documentação da API (Swagger) </h3>
 
 Para documentação da API (rotas e parâmetros), acesse a documentação local em http://localhost:3333/docs
 
@@ -197,7 +209,9 @@ Esta API foi hospedada diretamente no Render.
 O deployment pode ser acessado no seguinte endereço:
 
 ```
+
 https://nlw-unite-pass-in.onrender.com/
+
 ```
 
 > Nota: Como está hospedado em um serviço gratuito, a aplicação 'hiberna' após 15 minutos de inatividade. Se você estiver tentando acessar o site e o BackEnd não responder, basta aguardar, pois ele estará 'inicializando' os serviços.
