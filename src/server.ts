@@ -23,7 +23,7 @@ app.setValidatorCompiler(validatorCompiler)
 
 app.register(fastifyCors, {
   // origin: true
-  origin: 'http//localhost:3000'
+  origin: 'http://localhost:3000'
 })
 
 app.register(fastifySwagger, {
@@ -50,4 +50,3 @@ app.register(getRankingRoute)
 app.listen({ port: env.PORT }).then(() => {
   console.log('🚀 HTTP server running!')
 })
-
